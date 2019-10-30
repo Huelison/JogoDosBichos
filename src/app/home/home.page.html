@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Jogo dos Bichos
+    </ion-title> 
+    <ion-buttons slot="end">
+      <ion-button href="/about"> 
+        Sobre o App
+        <ion-icon slot="end" name="information-circle-outline"></ion-icon>
+      </ion-button> 
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content style="background-color: white" inset>
+  <div class="ion-margin" style="min-height: 90%; background-color: white">
+    <div class="ion-padding ">
+      <ion-label>Escolha um grupo de animais e tente adivinhar quais são. Não se esqueça de ler as dicas!</ion-label>
+
+      <ion-list class="borderc">
+        <ion-item (click)="openPagePerguntas('Aves')" type="button" button="true" style="border-color: green;">
+          <ion-thumbnail slot="start">
+            <img src="../../assets/aves.jpg">
+          </ion-thumbnail>
+          <ion-label>Aves</ion-label>
+        </ion-item>
+        <ion-item (click)="openPagePerguntas('Peixes')" type="button" button="true">
+          <ion-thumbnail slot="start">
+            <img src="../../assets/peixes.jpg">
+          </ion-thumbnail>
+          <ion-label>Peixes</ion-label>
+        </ion-item>
+        <ion-item (click)="openPagePerguntas('Mamiferos')" type="button" button="true">
+          <ion-thumbnail slot="start">
+            <img src="../../assets/mamiferos.jpg">
+          </ion-thumbnail>
+          <ion-label>Mamíferos</ion-label>
+        </ion-item>
+        <ion-item (click)="openPagePerguntas('Anfibios')" type="button" button="true">
+          <ion-thumbnail slot="start">
+            <img src="../../assets/anfibios.jpg">
+          </ion-thumbnail>
+          <ion-label>Anfíbios</ion-label>
+        </ion-item>
+        <ion-item (click)="openPagePerguntas('Repteis')" type="button" button="true">
+          <ion-thumbnail slot="start">
+            <img src="../../assets/repteis.jpg">
+          </ion-thumbnail>
+          <ion-label>Répteis</ion-label>
+        </ion-item>
+      </ion-list>
+      <br>
+      <ion-label>Um levantamento realizado pelo WWF mostra que, nos últimos 50 anos, 20% da Amazônia desapareceu do
+        mapa. Muito disso se deve ao desmatamento desenfreado motivado pelos pecuaristas, para a criação de pastos.
+        Outro motivo é a indústria da carne. O levantamento ainda mostra que, nos últimos 30 anos, a Terra perdeu 50% de
+        seus recifes de corais e 75% dos animais que correm risco de extinção estão ameaçados por causa da agricultura,
+        da exploração em excesso, e da caça ilegal. Este é um trabalho feito para conscientizar as crianças de como é
+        importante a preservação do meio ambiente. “Se não mudarmos, em pouco tempo não teremos mais animais.”
+      </ion-label>
+    </div>
+  </div>
+</ion-content>
